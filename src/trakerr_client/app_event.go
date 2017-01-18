@@ -1,7 +1,7 @@
 /* 
- * Severr API
+ * Trakerr API
  *
- * Get your application events and errors to Severr via the *Severr API*.
+ * Get your application events and errors to Trakerr via the *Trakerr API*.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -20,7 +20,7 @@
  * limitations under the License.
  */
 
-package severr_client
+package trakerr_client
 
 type AppEvent struct {
 

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"severr"
+	"trakerr"
 	"errors"
 )
 
 func main() {
-	client := severr.NewSeverrClientWithDefaults(
+	client := trakerr.NewTrakerrClientWithDefaults(
 		"ceba200baf79b1b5e9dc73d4054d6c9618388477122",
 		"http://192.168.0.117:3000/api/v1",
 		"1.0",

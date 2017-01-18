@@ -1,10 +1,10 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wordnik</groupId>
-    <artifactId>Goseverr_client</artifactId>
+    <artifactId>Gotrakerr_client</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <name>Goseverr_client</name>
+    <name>Gotrakerr_client</name>
  <build>
         <plugins>
             <plugin>

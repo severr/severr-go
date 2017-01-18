@@ -1,7 +1,7 @@
 /* 
- * Severr API
+ * Trakerr API
  *
- * Get your application events and errors to Severr via the *Severr API*.
+ * Get your application events and errors to Trakerr via the *Trakerr API*.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -20,12 +20,13 @@
  * limitations under the License.
  */
 
-package severr_client
+package trakerr_client
 
-// (optional) Custom string or double data to submit along with the event. This data can then be used in the Severr UI to view segmented data.
-type CustomData struct {
+type StackTraceLine struct {
 
-	StringData CustomStringData `json:"stringData,omitempty"`
+	Function string `json:"function,omitempty"`
 
-	DoubleData CustomDoubleData `json:"doubleData,omitempty"`
+	Line int32 `json:"line,omitempty"`
+
+	File string `json:"file,omitempty"`
 }

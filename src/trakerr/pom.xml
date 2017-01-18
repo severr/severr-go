@@ -1,10 +1,10 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wordnik</groupId>
-    <artifactId>Goseverr</artifactId>
+    <artifactId>Gotrakerr</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <name>GoSeverr</name>
+    <name>GoTrakerr</name>
     <build>
         <plugins>
             <plugin>
@@ -36,7 +36,7 @@
                             <executable>go</executable>
                             <arguments>
                                 <argument>get</argument>
-                                <argument>severr_client</argument>
+                                <argument>trakerr_client</argument>
                             </arguments>
                         </configuration>
                     </execution>

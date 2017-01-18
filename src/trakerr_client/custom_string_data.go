@@ -1,7 +1,7 @@
 /* 
- * Severr API
+ * Trakerr API
  *
- * Get your application events and errors to Severr via the *Severr API*.
+ * Get your application events and errors to Trakerr via the *Trakerr API*.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -20,25 +20,27 @@
  * limitations under the License.
  */
 
-package severr_client
+package trakerr_client
 
-import (
-	"net/http"
-)
+type CustomStringData struct {
 
-type APIResponse struct {
-	*http.Response
-	Message string `json:"message,omitempty"`
-}
+	CustomData1 string `json:"customData1,omitempty"`
 
-func NewAPIResponse(r *http.Response) *APIResponse {
+	CustomData2 string `json:"customData2,omitempty"`
 
-	response := &APIResponse{Response: r}
-	return response
-}
+	CustomData3 string `json:"customData3,omitempty"`
 
-func NewAPIResponseWithError(errorMessage string) *APIResponse {
+	CustomData4 string `json:"customData4,omitempty"`
 
-	response := &APIResponse{Message: errorMessage}
-	return response
+	CustomData5 string `json:"customData5,omitempty"`
+
+	CustomData6 string `json:"customData6,omitempty"`
+
+	CustomData7 string `json:"customData7,omitempty"`
+
+	CustomData8 string `json:"customData8,omitempty"`
+
+	CustomData9 string `json:"customData9,omitempty"`
+
+	CustomData10 string `json:"customData10,omitempty"`
 }

@@ -1,7 +1,7 @@
 /* 
- * Severr API
+ * Trakerr API
  *
- * Get your application events and errors to Severr via the *Severr API*.
+ * Get your application events and errors to Trakerr via the *Trakerr API*.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -20,7 +20,7 @@
  * limitations under the License.
  */
 
-package severr_client
+package trakerr_client
 
 import (
 	"encoding/base64"
@@ -46,7 +46,7 @@ type Configuration struct {
 
 func NewConfiguration() *Configuration {
 	return &Configuration{
-		BasePath:      "https://www.severr.io/api/v1",
+		BasePath:      "https://www.trakerr.io/api/v1",
 		UserName:      "",
 		debug:         false,
 		DefaultHeader: make(map[string]string),

@@ -1,7 +1,7 @@
 /* 
- * Severr API
+ * Trakerr API
  *
- * Get your application events and errors to Severr via the *Severr API*.
+ * Get your application events and errors to Trakerr via the *Trakerr API*.
  *
  * OpenAPI spec version: 1.0.0
  * 
@@ -20,27 +20,13 @@
  * limitations under the License.
  */
 
-package severr_client
+package trakerr_client
 
-type CustomDoubleData struct {
+type InnerStackTrace struct {
 
-	CustomData1 float64 `json:"customData1,omitempty"`
+	Type_ string `json:"type,omitempty"`
 
-	CustomData2 float64 `json:"customData2,omitempty"`
+	Message string `json:"message,omitempty"`
 
-	CustomData3 float64 `json:"customData3,omitempty"`
-
-	CustomData4 float64 `json:"customData4,omitempty"`
-
-	CustomData5 float64 `json:"customData5,omitempty"`
-
-	CustomData6 float64 `json:"customData6,omitempty"`
-
-	CustomData7 float64 `json:"customData7,omitempty"`
-
-	CustomData8 float64 `json:"customData8,omitempty"`
-
-	CustomData9 float64 `json:"customData9,omitempty"`
-
-	CustomData10 float64 `json:"customData10,omitempty"`
+	TraceLines []StackTraceLine `json:"traceLines,omitempty"`
 }
